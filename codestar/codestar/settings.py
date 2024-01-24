@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-i85u6nx!52%kb)fa$+zokoyjd-=l@4)%_frc9ywykln@wfca9%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com']
 
@@ -79,7 +79,8 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': 
+    dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
