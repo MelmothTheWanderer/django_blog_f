@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-i85u6nx!52%kb)fa$+zokoyjd-=l@4)%_frc9ywykln@wfca9%
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'my-django-blog-project-code-in-d8e05fb621d5.herokuapp.com/',
     '.herokuapp.com']
 
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'index',
 ]
 
 MIDDLEWARE = [
